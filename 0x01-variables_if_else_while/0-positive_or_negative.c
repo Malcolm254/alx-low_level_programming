@@ -4,9 +4,7 @@
 
 /**
  * main - Prints if number is positive, zero or negative
- *
  *Description: using the main function
- *  
  * Return:0 
  */
 int main(void)
