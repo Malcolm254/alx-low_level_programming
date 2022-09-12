@@ -1,0 +1,7 @@
+#!/bin/bash 
+for file in 0-positive_or_negative.c   
+do
+ 	 vi +' :w ++ff+unix' +' :q' "$file"  
+done 
+
+grep -rlZ __biinary_file=without-match --include='0-positive_or_negative.c' '\s$' . | xargs -r0 sed -i 's/\s+$//' 
